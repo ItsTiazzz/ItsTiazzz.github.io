@@ -17,3 +17,5 @@ Together with some friends, I created Tywrap Studios, a development Studios that
 ## Boring GitHub Stats
 ![Tywrap's GitHub stats Vercel](https://github-readme-stats.vercel.app/api?username=ItsTiazzz&show_icons=true&theme=dracula)
 ![Tywrap's GitHub stats Heroku](https://github-readme-streak-stats.herokuapp.com/?user=ItsTiazzz&theme=dark)
+
+[Other Page](./new_page.md)
