@@ -7,7 +7,7 @@ Together with some friends, I created Tywrap Studios, a development Studios that
 
 ### Reaching out to me:
 - You can join Tywrap Studios' [Discord server](https://discord.gg/kcm8scfCwK) and open a ticket, anything works!  
-- For private stuff you want to discuss one to one without witty Discord staff there, or if you don't feel like conversing through Discord at all, there's also the option of mailing [info.tywrap.studio@gmail.com](mailto:info.tywrap.studio@gmail.com)!  
+- For private stuff you want to discuss one to one without witty Discord staff there, or if you don't feel like conversing through Discord at all, there's also the option of mailing [business@tiazzz.me](mailto:business@tiazzz.me)[/info.tywrap.studio@gmail.com](mailto:info.tywrap.studio@gmail.com)! (they all end up in the same inbox, so don't worry about which one to use)  
 
 ### External Linkies:  
 - YouTube Channel: https://www.youtube.com/@ItsTiazzz  
