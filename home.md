@@ -1,3 +1,9 @@
+---
+layout: default
+title: Hey, I'm Tiazzz
+description: Let me tell you all about me
+---
+
 I'm a small, starting developer that mainly uses Java and Python.  
 Together with some friends, I created Tywrap Studios, a development Studios that mainly creates Minecraft mods. 
 ### About me:
@@ -18,4 +24,5 @@ Together with some friends, I created Tywrap Studios, a development Studios that
 ![Tywrap's GitHub stats Vercel](https://github-readme-stats.vercel.app/api?username=ItsTiazzz&show_icons=true&theme=dracula)
 ![Tywrap's GitHub stats Heroku](https://github-readme-streak-stats.herokuapp.com/?user=ItsTiazzz&theme=dark)
 
-[Other Page](./new_page)
+[Other Page](./very_cool_page)
+[Top](#)
