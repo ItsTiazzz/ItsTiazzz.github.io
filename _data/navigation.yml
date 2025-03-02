@@ -1,0 +1,6 @@
+- name: Home
+  link: /home.md
+- name: Other page
+  link: /very_cool_page.md
+- name: Blog
+  link: /blog.html
