@@ -24,5 +24,6 @@ Together with some friends, I created Tywrap Studios, a development Studios that
 ![Tywrap's GitHub stats Vercel](https://github-readme-stats.vercel.app/api?username=ItsTiazzz&show_icons=true&theme=dracula)
 ![Tywrap's GitHub stats Heroku](https://github-readme-streak-stats.herokuapp.com/?user=ItsTiazzz&theme=dark)
 
-[Other Page](./very_cool_page)
-[Top](#)
+<li><a href="./home" target="_self">Home</a></li>
+<li><a href="./blog" target="_self">Blogs</a></li>
+<li><a hreft="./very_cool_page" target="_self">Cool Page</a></li>
