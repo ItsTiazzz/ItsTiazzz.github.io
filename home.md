@@ -26,4 +26,4 @@ Together with some friends, I created Tywrap Studios, a development Studios that
 
 <li><a href="./home" target="_self">Home</a></li>
 <li><a href="./blog" target="_self">Blogs</a></li>
-<li><a hreft="./very_cool_page" target="_self">Cool Page</a></li>
+<li><a href="./very_cool_page" target="_self">Cool Page</a></li>
