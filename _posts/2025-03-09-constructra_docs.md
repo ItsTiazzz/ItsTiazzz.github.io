@@ -28,6 +28,9 @@ Another reason as to why I made the hud, is so I can get proper DNS set up.
 Because see, using custom domains with GitHub pages is a **pain in the ass**. If I want to make a docs site at, let's say, docs.tiazzz.me/site1, and run it in a repo, it'll be tywrap-studios.github.io/site1, now when I link the domain up to it, it'll actually just use the bare docs.tiazzz.me domain, meaning site1 is directly available on docs.tiazzz.me EVEN THOUGH THE CNAME RECORD I HAVE POINTS docs.tiazzz.me TO THE BARE tywrap-studios.github.io DOMAIN!!  
 Now luckily, making a Tywrap-Studios/Tywrap-Studios.github.io repo and putting a CNAME in *there* has fixed this, because docs.tiazzz.me now routes to that, which means that if I make a repo called Site2, its GitHub pages site would be at tywrap-studios.github.io/Site2, and now I can finally make docs.tiazzz.me/Site2 actually be that.  
 
+Here's a small preview for those who don't trust my links:
+![image](image.png)
+
 Phew, what a job. Anyway, have a nice day! You can view the sites here (and go back if my post layout thing worked properly lol): 
 - [Docs Hub](https://docs.tiazzz.me)
 - [WIP Constructra Docs](https://docs.tiazzz.me/Constructra)
