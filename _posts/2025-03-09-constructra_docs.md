@@ -29,7 +29,7 @@ Because see, using custom domains with GitHub pages is a **pain in the ass**. If
 Now luckily, making a Tywrap-Studios/Tywrap-Studios.github.io repo and putting a CNAME in *there* has fixed this, because docs.tiazzz.me now routes to that, which means that if I make a repo called Site2, its GitHub pages site would be at tywrap-studios.github.io/Site2, and now I can finally make docs.tiazzz.me/Site2 actually be that.  
 
 Here's a small preview for those who don't trust my links:
-![image](image.png)
+![image.png](image.png)
 
 Phew, what a job. Anyway, have a nice day! You can view the sites here (and go back if my post layout thing worked properly lol): 
 - [Docs Hub](https://docs.tiazzz.me)

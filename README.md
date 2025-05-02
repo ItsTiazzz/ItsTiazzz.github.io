@@ -1,3 +1,3 @@
 # ItsTiazzz.github.io
 It's just a small site that I put some stuff on, nothing more tbh  
-You can view it at https://tiazzz.me/home
+You can view it at https://tiazzz.me
