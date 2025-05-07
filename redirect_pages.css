@@ -10,7 +10,7 @@
 	outline: 1px solid red;
 	filter: url(#goo);
 		-o-filter: url(#goo);
-		-ms-filter: url(#goo);
+		/*-ms-filter: url(#goo);*/
 		-webkit-filter: url(#goo);
 		-moz-filter: url(#goo);
 }
@@ -119,8 +119,14 @@
 		-moz-animation: cssload-dot-move 4s 3s ease infinite;
 }
 
-.textaligner {
+.text_prettifier {
     text-align: center;
+	color: antiquewhite;
+	font-family: "Cascadia Code", serif;
+}
+
+.body_darkener {
+	background-color: #222222;
 }
 
 @keyframes cssload-dot-move {
