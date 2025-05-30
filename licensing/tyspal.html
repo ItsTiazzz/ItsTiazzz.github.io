@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #3e3e3e;
+      padding: 40px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #272727;
+      color: antiquewhite;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    textarea {
+      width: 98%;
+      background: #3e3e3e;
+      color: antiquewhite;
+      height: 500px;
+      margin-top: 20px;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      resize: vertical;
+      overflow-x: auto;
+      white-space: pre;
+      border-radius: 10px;
+    }
+    .buttons {
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      margin-right: 10px;
+      cursor: pointer;
+      background: antiquewhite;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>File Viewer</h2>
+    <p><strong>File:</strong> <span id="fileName"></span></p>
+    <textarea id="fileContent" placeholder="Loading content..." readonly wrap="off"></textarea>
+    <div class="buttons">
+      <button id="copyBtn">Copy to Clipboard</button>
+      <button id="downloadBtn">Download File</button>
+    </div>
+  </div>
+
+  <script>
+    const fileUrl = './tyspal-1.0.txt';
+    const fileName = fileUrl.split('/').pop() || 'file.txt';
+    
+    document.getElementById('fileName').textContent = fileName;
+
+    const fileContent = document.getElementById('fileContent');
+    const copyBtn = document.getElementById('copyBtn');
+    const downloadBtn = document.getElementById('downloadBtn');
+
+    fetch(fileUrl)
+      .then(async response => {
+        const contentType = response.headers.get("Content-Type") || "";
+        if (contentType.includes("text") || contentType === "") {
+          return await response.text();
+        } else if (contentType.includes("pdf")) {
+          return "[PDF files cannot be displayed as text. Download it instead.]";
+        } else {
+          return "[Unsupported file type or binary file.]";
+        }
+      })
+      .then(text => fileContent.value = text)
+      .catch(err => fileContent.value = "Error loading file: " + err);
+
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(fileContent.value)
+        .then(() => alert("Copied to clipboard!"))
+        .catch(err => alert("Copy failed: " + err));
+    });
+
+    downloadBtn.addEventListener('click', () => {
+      const blob = new Blob([fileContent.value], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = fileName;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
