@@ -1,10 +1,48 @@
 ---
-layout: default
+layout: page
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+
+<h1><b>{{ page.title }}</b></h1>
+
+<p class="post-metadata text-muted">
+  {{ page.date | date_to_long_string }} -
+  <b>
+    {%- assign words = content | number_of_words -%}
+    {%- if words < 360 -%}
+    less than 1 min read time
+    {%- else -%}
+    {{ words | divided_by: 180 }} mins read time
+    {%- endif -%}
+  </b>
+
+  <br>
+
+  {%- if page.tags != empty -%}
+  Tags:
+  {% for tag in page.tags %}
+  <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
+    <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+  </a>
+  {% endfor %}
+  {%- endif -%}
+
+  {%- if page.authors -%}
+  <br>
+  Authors:
+  {% for author in page.authors %}
+  <a class="text-decoration-none no-underline" href="{{ author | slugify | prepend:'/members/' | relative_url }}">
+    <span class="author badge badge-pill text-success border border-success">{{ author }}</span>
+  </a>
+  {% endfor %}
+  {%- endif -%}
+
+
+</p>
 
 {{ content }}
 
-<li><a href="../../../" target="_self">Home</a></li>
-<li><a href="../../../blog" target="_self">Blogs</a></li>
+{% if page.comments %}
+<div class="pt-5">
+  {% include blog/disqus.html %}
+</div>
+{% endif %}

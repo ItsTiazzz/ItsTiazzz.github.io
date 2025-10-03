@@ -1,0 +1,12 @@
+- name: Java/Kotlin
+  percentage: 70
+  color: info
+- name: Python
+  percentage: 50
+  color: warning
+- name: Dart
+  percentage: 35
+  color: primary
+- name: HTML/CSS
+  percentage: 15
+  color: danger

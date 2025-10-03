@@ -1,0 +1,12 @@
+- name: MC Server Administration
+  percentage: 70
+  color: success
+- name: Group Management
+  percentage: 65
+  color: info
+- name: Video Editing
+  percentage: 50
+  color: primary
+- name: Camera work
+  percentage: 10
+  color: danger
