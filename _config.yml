@@ -105,8 +105,5 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
-  - r/
   - .gitignore
   - CNAME
-  - Gemfile
-  - Gemfile.lock
